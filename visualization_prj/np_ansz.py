@@ -1,0 +1,31 @@
+import numpy as np
+cn,mt,en,pt,ch = np.loadtxt('期末成绩.csv',delimiter=',',usecols=(0,1,2,3,4),unpack=True,skiprows=1,encoding='utf-8')
+print('语文成绩的算术平均数为%.2f'%np.mean(cn))
+print('数学成绩的算术平均数为%.2f'%np.mean(mt))
+print('英语成绩的算术平均数为%.2f'%np.mean(en))
+print('物理成绩的算术平均数为%.2f'%np.mean(pt))
+print('化学成绩的算术平均数为%.2f'%np.mean(ch))
+#
+print('语文成绩的方差：%.2f'%np.var(cn))
+print('数学成绩的方差：%.2f'%np.var(mt))
+print('英语成绩的方差：%.2f'%np.var(en))
+print('物理成绩的方差：%.2f'%np.var(pt))
+print('化学成绩的方差：%.2f'%np.var(ch))
+#
+print('语文成绩的中位数：%.2f'%np.median(cn))
+print('数学成绩的中位数：%.2f'%np.median(mt))
+print('英语成绩的中位数：%.2f'%np.median(en))
+print('物理成绩的中位数：%.2f'%np.median(pt))
+print('化学成绩的中位数：%.2f'%np.median(ch))
+#
+print('语文成绩的最大值：%.2f'%np.max(cn))
+print('数学成绩的最大值：%.2f'%np.max(mt))
+print('英语成绩的最大值：%.2f'%np.max(en))
+print('物理成绩的最大值：%.2f'%np.max(pt))
+print('化学成绩的最大值：%.2f'%np.max(ch))
+#
+print('语文成绩的最小值：%.2f'%np.min(cn))
+print('数学成绩的最小值：%.2f'%np.min(mt))
+print('英语成绩的最小值：%.2f'%np.min(en))
+print('物理成绩的最小值：%.2f'%np.min(pt))
+print('化学成绩的最小值：%.2f'%np.min(ch))
